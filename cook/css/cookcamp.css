@@ -1,0 +1,275 @@
+@charset "UTF-8";
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #F5F5DC;
+}
+p,a,h2{
+    font-size: 1.44rem;
+}
+img{
+    vertical-align: bottom;
+}
+a:hover{
+    font-weight: bold;
+}
+.wrapper{
+    max-width: 960px;
+    margin: 0px auto;
+    font-size: 0.9rem;
+    background-color: white;
+}
+#side-left aside{
+    background-color: white;
+    margin-bottom: 15px;
+    padding:12px 12px 5px 12px;
+}
+article{
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 12px 8px;
+}
+#side-right aside{
+    margin-bottom: 15px;
+}
+
+        /*文字系*/
+        
+.sub-title{
+    background-color: #9ACD32;
+    color: white;
+    border-radius: 30px;
+    padding:5px 20px;
+    align-items: center;
+    font-weight: bold;
+    display: flex;
+}
+.sub-title .sub-title-text h2{
+    font-weight: bold;
+    display: inline-block;
+}
+.sub-title img{
+    padding-right: 7px;
+    width: 2.3rem;
+    height: auto;
+}
+.read-more a{
+    display: inline-block;
+    padding-left: 1.4rem;
+    line-height: 1.6em;
+    background: url(../images/icon/arrow.png) left 0 top 50% no-repeat;
+    background-size: 13px auto;
+    color: #FF9900;
+    padding-right: 1rem;
+}
+
+#side-left ul li a{
+    padding-left: 20px;
+	line-height: 1.6em;
+	background: url(../images/icon/arrow.png) left 0px top 50% no-repeat;
+	background-size: 12.5px auto;
+    color: #663300;
+}
+.easy-recipes-text h3{
+    color:#663300;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.44rem;
+}
+        /*文字系　ここまで*/
+main{
+    padding:0 2rem;
+}
+        /*メインビジュアル*/
+#main-visual{
+    padding:0;
+    margin-bottom: 15px;
+}
+#main-visual img{
+    width:100%;
+}
+        /*メインビジュアル　ここまで*/
+
+        /* レスポンシブ時の要素 */
+.res-search{
+    display: none;
+    margin-bottom: 1.5rem;
+}
+.res-search #sbox{
+    width: 83%;
+    height: 5rem;
+    font-size: 2rem;
+    padding: 0 1rem;
+    border: 1px solid #d6cfcf;
+    border-radius: 1rem;
+    background-color: white;
+}
+.res-search #sbtn{
+    width: 15%;
+    height: 5rem;
+    background-color: #9ACD32;
+    color:white;
+    border: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+        
+        /*３カラムの位置関係*/
+#three-contents{
+    display: flex;
+    justify-content:space-between;
+    background-color: #F5F5DC;
+}
+#side-left{
+    width:20.3%;
+}
+#main-contents{
+    width:60.3%;
+}
+#side-right{
+    width:17.3%;
+}
+        /*３カラムの位置関係　ここまで*/
+        
+        
+        /*サイド（左）*/
+#side-left .sub-title{
+    margin-bottom: 7px;
+}
+#side-left ul li{
+    line-height: 3.75rem;
+}
+#side-left ul li:not(:last-child){
+    border-bottom: 1.5px dashed #CCCCCC;
+}
+        /*サイド（左）ここまで*/
+        
+
+        /*メインコンテンツ（真ん中）*/
+#main-contents .sub-title{
+    margin-bottom: 16px;
+}
+/*上段*/
+#main-contents #new-recipes ul{
+    display: flex;
+    justify-content: space-between;
+}
+#main-contents #new-recipes ul a:hover{
+    opacity: 0.7;
+}
+#main-contents #new-recipes ul li p{
+    font-size: 1.2rem;
+    margin-top: 3px;
+    text-align: center;
+}
+
+.slick-area {
+    margin: 30px auto 0;
+}
+.slick-area .slick-list {
+padding: 0 20% 0 0!important;
+}
+.slick-area li {
+margin: 0 0.5%;
+}
+
+/*上段ここまで*/
+
+/*中段*/
+#main-contents #japanese-food-contents{
+    display: flex;
+    justify-content: space-around;
+}
+#main-contents #japanese-food-img{
+    width:38%;
+}
+#main-contents #japanese-food-contents img{
+    width:100%;
+    height: auto;
+}
+#main-contents #japanese-food-text{
+    width:55%;
+    padding:0 5px;
+}
+#main-contents #japanese-food-text p{
+    margin-bottom: 10px;
+}
+#japanese-food .read-more p{
+    text-align: right;
+}
+#main-contents #japanese-food-contents p,
+#main-contents #easy-recipes .easy-recipes-contents .easy-recipes-text
+{
+    line-height: 1.7rem;
+}
+/*中断ここまで*/
+
+/*下段*/
+#main-contents #easy-recipes .easy-recipes-contents{
+    display: flex;
+    justify-content: space-around;
+}
+#main-contents #easy-recipes{
+    padding-bottom: 0;
+}
+#main-contents #easy-recipes .read-more{
+    padding-bottom: 2.5rem;
+    text-align: right;
+}
+#main-contents #easy-recipes .easy-recipes-contents .easy-recipes-text{
+    width:50%;
+}
+#main-contents #easy-recipes .easy-recipes-contents .easy-recipes-text .first{
+    margin-bottom: 20px;
+}
+#main-contents #easy-recipes .easy-recipes-contents img{
+    width:45%;
+}
+#main-contents #easy-recipes .read-more p{
+    padding:10px 0;
+    background: url(images/icon/arrow.png) right 75px top 15px no-repeat;
+}
+/*下段ここまで*/
+
+        /*メインコンテンツ（真ん中）ここまで*/
+        
+        /*サイド（右）*/
+#side-right aside{
+    background-color: white;
+}
+#side-right img{
+    width:100%;
+}
+#side-right a:hover{
+    opacity: 0.8;
+}
+
+        /*サイド（右）ここまで*/
+
+        /*フッター*/
+#footer{
+    background-color: white;
+    padding:10px 0 20px 0;
+    font-size:0.8rem;
+    border-top: 2px solid #DDDDDD;
+}
+
+#footer nav ul{
+    display: flex;
+    justify-content: center;
+}
+#footer nav ul li{
+    padding:5px 10px;
+    text-align: center;
+}
+#footer nav ul li:not(:last-child){
+    border-right: 1px solid #DDDDDD;
+}
+#footer #copyright{
+    text-align: center;
+    margin: 5px 0;
+    color:#AAAAAA;
+}
+        /*フッターここまで*/
